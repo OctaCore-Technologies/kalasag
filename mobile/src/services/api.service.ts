@@ -5,6 +5,12 @@ const API_BASE_URL = process.env.API_BASE_URL ?? 'http://localhost:4000';
 
 const client = axios.create({ baseURL: API_BASE_URL });
 
+/**
+ * Fetches the list of all registered relay nodes from the backend API.
+ *
+ * @returns {Promise<RelayNode[]>} Promise resolving to array of relay node records
+ * @throws {Error} If the API request fails
+ */
 export async function fetchNodes(): Promise<RelayNode[]> {
   const response = await client.get<RelayNode[]>('/nodes');
   return response.data;

@@ -4,6 +4,11 @@ import { coverageRouter } from "./routes/coverage.route.js";
 import { healthRouter } from "./routes/health.route.js";
 import { nodesRouter } from "./routes/nodes.route.js";
 
+/**
+ * Creates and configures the Express application with all routes and middleware.
+ *
+ * @returns {express.Express} The configured Express application instance
+ */
 export function createApp() {
   const app = express();
 

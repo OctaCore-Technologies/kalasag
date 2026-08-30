@@ -5,6 +5,9 @@ import { MapScreen } from '../screens/MapScreen';
 import { NodeListScreen } from '../screens/NodeListScreen';
 import { NodePairingScreen } from '../screens/NodePairingScreen';
 
+/**
+ * Type definition for the root navigation stack parameters.
+ */
 export type RootStackParamList = {
   Map: undefined;
   NodeList: undefined;
@@ -13,6 +16,12 @@ export type RootStackParamList = {
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
+/**
+ * Root navigation component for the KALASAG mobile app.
+ * Provides navigation between Map, NodeList, and NodePairing screens.
+ *
+ * @returns {React.JSX.Element} The navigation container with configured screens
+ */
 export function RootNavigator(): React.JSX.Element {
   return (
     <NavigationContainer>

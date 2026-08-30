@@ -1,6 +1,11 @@
 import { cert, initializeApp } from "firebase-admin/app";
 import { env } from "../config/env.js";
 
+/**
+ * Initializes Firebase Admin SDK for backend-to-Firestore synchronization.
+ *
+ * @returns {FirebaseApp | null} Firebase app instance if credentials are configured, null otherwise
+ */
 // TODO: sync node registration/position data with the mobile app's offline-sync queue.
 export function initFirebase() {
   if (!env.firebase.projectId) {

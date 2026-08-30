@@ -4,6 +4,11 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+/**
+ * Main application component for the KALASAG coordination console.
+ *
+ * @returns {JSX.Element} The rendered application UI
+ */
 function App() {
   const [count, setCount] = useState(0)
 
