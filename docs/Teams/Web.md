@@ -17,9 +17,7 @@ Owns both the coordination console and the API server — one team, two folders 
 
 ## GitHub
 
-- Team: `@OctaCore-Technologies/web`
-- Integration branch: `web-main` (branch off it, PR back into it — see the repo's `CONTRIBUTING.md`)
-- CI: `frontend-ci.yml`, `backend-ci.yml`
+`@OctaCore-Technologies/web` team · branch off `web-main`, PR back into it · CI: `frontend-ci.yml`, `backend-ci.yml`
 
 ## Related
 

@@ -16,9 +16,7 @@ Owns the field companion app used by the responder physically placing relay node
 
 ## GitHub
 
-- Team: `@OctaCore-Technologies/mobile`
-- Integration branch: `mobile-main`
-- CI: `mobile-ci.yml` (lint + typecheck + test — no native Android/iOS build in CI, that's a local/manual step)
+`@OctaCore-Technologies/mobile` team · branch off `mobile-main` · CI: `mobile-ci.yml` (lint + typecheck + test — no native build in CI, that's local/manual)
 
 ## Related
 

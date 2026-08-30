@@ -9,6 +9,9 @@ tags:
 > [!abstract] What is KALASAG?
 > A low-cost, field-durable LoRa mesh relay system for disaster response — relay nodes extend communication coverage into signal-dead areas, a coordination console guides the deploying team on where to place the next node, and a field companion app lets the responder register and position each node as it's dropped.
 
+> [!info] We're 8 people, keep this light
+> Fronts are 2–4 people and meetings are almost always the whole team, so this vault doesn't need attendee tracking, sign-off workflows, or department silos. Short notes, real links, done — don't add process for its own sake.
+
 ## Start here
 
 - [[Architecture/System Overview|Architecture: System Overview]]

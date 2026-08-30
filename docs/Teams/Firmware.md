@@ -16,12 +16,9 @@ Owns the relay/gateway node firmware — integration and glue around an existing
 
 ## GitHub
 
-- Team: `@OctaCore-Technologies/firmware`
-- Integration branch: `firmware-main`
-- CI: `firmware-ci.yml` (`pio run` — build only, no test framework wired yet)
+`@OctaCore-Technologies/firmware` team · branch off `firmware-main` · CI: `firmware-ci.yml` (`pio run`)
 
-> [!warning] Platform version is pinned on purpose
-> `platformio.ini` pins an exact `espressif32` version. If you bump it, you must also regenerate `sdkconfig.4d_systems_esp32s3_gen4_r8n16` (delete it, rebuild, commit the fresh one) — otherwise CI breaks the same way it did before this was pinned. See `firmware/README.md` for the full note.
+Heads up: `platformio.ini` pins the ESP-IDF platform version on purpose — see `firmware/README.md` before bumping it, or CI breaks the same way it did before it was pinned.
 
 ## Related
 

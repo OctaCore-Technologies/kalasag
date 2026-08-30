@@ -1,4 +1,2 @@
 # Obsidian's local app state/UI config — per-user, not shared
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
+.obsidian/
