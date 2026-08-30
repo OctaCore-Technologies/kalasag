@@ -10,11 +10,14 @@ The mobile app used by the responder physically placing relay nodes: BLE pairing
 | Language | TypeScript |
 | Native tooling | Android Studio (Android), Xcode (iOS, macOS only) |
 
-## Editor: VS Code
+## Editor: VS Code + Android Studio
 
-You write and edit code in **VS Code**, same as web and the rest of the repo — React Native doesn't have its own dedicated code editor. Android Studio and Xcode are only needed for their **native SDKs, emulators/simulators, and build tools**; you don't write app code in them.
+The mobile team uses both, for different jobs — you'll want both installed:
 
-Recommended VS Code extensions: `dbaeumer.vscode-eslint`, `msjsdiag.vscode-react-native` (debugging/log streaming for RN).
+- **VS Code** — where you actually write and edit code: `App.tsx`, everything in `src/`. This is where ESLint, TypeScript, and Metro (the RN dev server) all work correctly. Recommended extensions: `dbaeumer.vscode-eslint`, `msjsdiag.vscode-react-native` (debugging/log streaming for RN).
+- **Android Studio** — not for editing app code. It's for the Android SDK Manager, running/configuring the emulator (AVD Manager), and Logcat if you need to debug a native-level crash. Open `mobile/android/` directly in it if you ever need to touch native Gradle config — the JS/TS side (`src/`, `App.tsx`) isn't something you'd edit there.
+
+In short: code in VS Code, run the emulator and manage the SDK from Android Studio, build/run the app itself via `npm run android` from a terminal (VS Code's integrated terminal is fine) rather than through Android Studio's UI.
 
 ## Prerequisites
 
