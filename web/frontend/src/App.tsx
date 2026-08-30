@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, type JSX } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -9,7 +9,7 @@ import './App.css'
  *
  * @returns {JSX.Element} The rendered application UI
  */
-function App() {
+function App(): JSX.Element {
   const [count, setCount] = useState(0)
 
   return (

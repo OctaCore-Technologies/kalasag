@@ -31,7 +31,7 @@ main                              # production — PM + QA approval required
 | `<short-description>` | lowercase, hyphen-separated, no ticket numbers needed |
 
 **Examples:**
-```
+```text
 web-main/feat/homepage
 web-main/fix/navbar-overlap
 web-main/feat/user-auth
