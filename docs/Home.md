@@ -25,6 +25,7 @@ tags:
 For anything that changes with the code itself — setup steps, running locally, build scripts — go to the component README, not this vault:
 
 - [web/README.md](../web/README.md)
+- [mobile/README.md](../mobile/README.md)
 - [firmware/README.md](../firmware/README.md)
 - [shared/docs/mqtt-payload-schema.md](../shared/docs/mqtt-payload-schema.md)
 

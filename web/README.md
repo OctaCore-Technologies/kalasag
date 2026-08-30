@@ -11,6 +11,12 @@ This directory contains the coordination console (frontend) and API server (back
 
 ---
 
+## 0. Editor
+
+VS Code is what everyone on this repo uses. Recommended extensions: `dbaeumer.vscode-eslint`, plus TypeScript support (built in).
+
+---
+
 ## 1. Frontend Prerequisites (Node.js)
 
 The React frontend relies on Node.js for local development and bundling. To prevent system-wide dependency conflicts, we require Node Version Manager (NVM) across all environments.

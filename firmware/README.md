@@ -29,10 +29,12 @@ This directory contains the embedded codebase for the KALASAG relay node, runnin
 
 ## Developer Setup
 
-Because our 5-person team develops across different operating systems (Windows and Linux), we rely entirely on **PlatformIO** to isolate the C++ toolchain and prevent local compiler conflicts.
+Because the team develops across different operating systems (Windows and Linux), we rely entirely on **PlatformIO** to isolate the C++ toolchain and prevent local compiler conflicts — not the Arduino IDE, even though the original proposal listed both as options.
 
-1. Install the **PlatformIO IDE** extension in VS Code.
-2. Open the `firmware/Software_Engineering` folder. (PlatformIO requires its folder to be the root of the workspace to initialize properly).
+PlatformIO isn't a standalone IDE — it's a build/toolchain system with editor integrations. This repo assumes the **PlatformIO IDE extension for VS Code** specifically (same editor as web and mobile), not the CLion plugin or CLI-only usage:
+
+1. Install VS Code, then install the **PlatformIO IDE** extension from the Extensions marketplace.
+2. Open the `firmware/Software_Engineering` folder. (PlatformIO requires its folder to be the root of the workspace to initialize properly — opening the repo root instead won't pick it up.)
 3. Allow PlatformIO a few minutes to automatically read the `platformio.ini` file and download the correct ESP32 toolchains and libraries.
 4. Click the PlatformIO **Build** button (the checkmark icon in the bottom status bar) to verify your local environment compiles successfully.
 
