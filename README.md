@@ -26,6 +26,7 @@ Backend (Express + TypeScript)
 | `mobile/` | Field companion app — React Native + TypeScript |
 | `firmware/` | ESP32 + LoRa relay node firmware — PlatformIO |
 | `shared/` | Cross-component data contracts (node/coverage/MQTT payload types) |
+| `docs/` | Obsidian knowledge base — architecture notes, ADRs, team pages (open as its own vault, see [docs/README.md](docs/README.md)) |
 
 ## Tech Stack
 
@@ -36,19 +37,42 @@ Backend (Express + TypeScript)
 | Mobile app | React Native, TypeScript |
 | Firmware | ESP32-S3, PlatformIO, Meshtastic/MeshCore |
 
-## Team Members
+## Team
 
-| Name             | Role / Focus Area                                       |
-| :--------------- | :------------------------------------------------------ |
-| **Aquino**       | Project Manager / Scrum Master / Hardware Designer / QA |
-| **Seraspe**      | Hardware Specialist / Database Manager                  |
-| **Dayapera**     | Frontend Developer / UI/UX Designer                     |
-| **Gonzal**       | Frontend Developer / UI/UX Designer                     |
-| **Pangilinan**   | Backend Developer / UI/UX Designer                      |
-| **Tarroza**      | Backend Developer / Hardware Specialist                 |
-| **Delos Santos** | Backend Developer / Database Manager                    |
-| **Villareal**    | Hardware Designer / QA                                  |
+Three departments map onto this repo's fronts — see [CONTRIBUTING.md](CONTRIBUTING.md) for the matching branch model (`firmware-main` / `web-main` / `mobile-main`) and [docs/Teams](docs/Teams) for the corresponding GitHub teams.
+
+### IoT (`firmware/`)
+
+| Name | Role |
+| :--- | :--- |
+| **Seraspe** | Hardware (Lead) |
+| **Aquino** | Hardware |
+| **Tarroza** | Hardware |
+| **Villareal** | Hardware |
+
+### Web (`web/frontend/`, `web/backend/`)
+
+| Name | Role |
+| :--- | :--- |
+| **Seraspe** | Backend Developer / Database Manager |
+| **Pangilinan** | Backend Developer / Database Manager, Frontend Developer |
+| **Tarroza** | Frontend Developer |
+
+### Application (`mobile/`)
+
+| Name | Role |
+| :--- | :--- |
+| **Delos Santos** | Backend Developer / Database Manager (Lead) |
+| **Gonzal** | Fullstack Developer, Frontend Developer |
+| **Dayapera** | Frontend Developer |
+
+### Cross-team roles
+
+| Name | Role |
+| :--- | :--- |
+| **Aquino** | Scrum Master / Project Manager, Quality Assurance |
+| **Villareal** | Quality Assurance (Lead), Research Developer / Business Analyst |
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for branching, commit conventions, and PR workflow. See [shared/](shared/) for the data contracts shared across backend, web, mobile, and firmware.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for branching, commit conventions, and PR workflow. See [shared/](shared/) for the data contracts shared across backend, web, mobile, and firmware, and [docs/](docs/) for architecture notes, decision records, and team pages.
