@@ -9,6 +9,8 @@ This directory contains the embedded codebase for the KALASAG relay node, runnin
 - **Radio:** LoRa module for multi-hop mesh relay
 - **Key Peripherals:** GPS module (auto position logging on GPS-equipped nodes), BLE (pairing/registration with the field app), battery/signal monitoring
 
+> `platformio.ini` pins an exact `espressif32` platform version. Leaving it unpinned lets CI silently pull a newer ESP-IDF release whose Kconfig options don't match the committed `sdkconfig.*` file, which breaks the build. If you bump the pinned version, delete `sdkconfig.4d_systems_esp32s3_gen4_r8n16` and let it regenerate against the new version, then commit the regenerated file.
+
 ## Node Roles
 
 - **Relay node:** runs mesh firmware, relays messages, reports battery/signal/position.
