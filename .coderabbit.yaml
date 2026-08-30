@@ -3,6 +3,5 @@ reviews:
     enabled: true
     base_branches:
       - "^main$"
-      - "^frontend-main$"
-      - "^backend-main$"
+      - "^web-main$"
       - "^firmware-main$"

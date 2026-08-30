@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-      - backend-main
+      - web-main
     paths:
       - 'web/backend/**'
 
