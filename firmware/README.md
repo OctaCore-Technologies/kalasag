@@ -29,9 +29,7 @@ This directory contains the embedded codebase for the KALASAG relay node, runnin
 
 ## Developer Setup
 
-Because the team develops across different operating systems (Windows and Linux), we rely entirely on **PlatformIO** to isolate the C++ toolchain and prevent local compiler conflicts — not the Arduino IDE, even though the original proposal listed both as options.
-
-PlatformIO isn't a standalone IDE — it's a build/toolchain system with editor integrations. This repo assumes the **PlatformIO IDE extension for VS Code** specifically (same editor as web and mobile), not the CLion plugin or CLI-only usage:
+The firmware team uses **VS Code + the PlatformIO IDE extension** — not the Arduino IDE (even though the original proposal listed both as options), not PlatformIO's CLion plugin, not CLI-only usage. Because the team develops across different operating systems (Windows and Linux), PlatformIO is what isolates the C++ toolchain and prevents local compiler conflicts; PlatformIO itself isn't a standalone IDE, it's a build/toolchain system, and VS Code is the editor it's paired with here (same editor as web and mobile use, just with a different extension):
 
 1. Install VS Code, then install the **PlatformIO IDE** extension from the Extensions marketplace.
 2. Open the `firmware/Software_Engineering` folder. (PlatformIO requires its folder to be the root of the workspace to initialize properly — opening the repo root instead won't pick it up.)
