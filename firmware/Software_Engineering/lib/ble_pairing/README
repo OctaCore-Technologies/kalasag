@@ -1,0 +1,2 @@
+BLE GATT service used by the field app to pair with a node at placement time,
+confirm registration, and (for non-GPS nodes) receive a manually-pinned position.

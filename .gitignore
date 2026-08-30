@@ -1,0 +1,40 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+dist/
+build/
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# React Native
+mobile/ios/Pods/
+mobile/ios/build/
+mobile/android/.gradle/
+mobile/android/app/build/
+mobile/android/local.properties
+mobile/.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# PlatformIO
+firmware/Software_Engineering/.pio/
+firmware/Software_Engineering/.pioenvs/
+firmware/Software_Engineering/.piolibdeps/
+
+# macOS
+.DS_Store
+
+# VSCode (keep shared settings, ignore local overrides)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Logs
+*.log

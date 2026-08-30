@@ -10,12 +10,14 @@ main                              # production — PM + QA approval required
 │   └── frontend-main/feat/...    # frontend feature branches
 ├── backend-main                  # backend integration branch
 │   └── backend-main/feat/...     # backend feature branches
+├── mobile-main                   # mobile integration branch
+│   └── mobile-main/feat/...      # mobile feature branches
 └── firmware-main                 # firmware integration branch
     └── firmware-main/feat/...    # firmware feature branches
 ```
 
 - **`main`** — always deployable. Nobody pushes here directly; only merges via PR from a team-main branch.
-- **`frontend-main` / `backend-main` / `firmware-main`** — each team's integration branch. Feature branches merge here first.
+- **`frontend-main` / `backend-main` / `mobile-main` / `firmware-main`** — each team's integration branch. Feature branches merge here first.
 - **Feature branches** — where actual work happens. Always branched off the relevant team-main branch, never off `main`.
 
 ## Branch naming convention
@@ -26,7 +28,7 @@ main                              # production — PM + QA approval required
 
 | Part | Options |
 |---|---|
-| `<team>` | `frontend`, `backend`, `firmware` |
+| `<team>` | `frontend`, `backend`, `mobile`, `firmware` |
 | `<type>` | `feat`, `fix`, `chore`, `docs`, `hotfix` |
 | `<short-description>` | lowercase, hyphen-separated, no ticket numbers needed |
 
@@ -36,6 +38,8 @@ frontend-main/feat/homepage
 frontend-main/fix/navbar-overlap
 backend-main/feat/user-auth
 backend-main/fix/login-timeout
+mobile-main/feat/ble-pairing
+mobile-main/fix/offline-sync-crash
 firmware-main/feat/sensor-calibration
 firmware-main/chore/update-drivers
 ```

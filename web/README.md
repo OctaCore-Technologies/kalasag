@@ -1,13 +1,13 @@
-# Project Title
+# KALASAG Web
 
-This repository contains the source code for our full-stack application. To ensure a smooth workflow across our five-person development team, we strictly separate the frontend web environment from our core API.
+This directory contains the coordination console (frontend) and API server (backend) for KALASAG. The console is used by whoever is directing a node deployment; the backend serves coverage/placement data to both the web console and the mobile field app, and ingests status data uplinked from the gateway node.
 
 ## Tech Stack Overview
 
-| Layer        | Technology           | Build Tools / Runtime   |
-| :----------- | :------------------- | :---------------------- |
-| **Frontend** | React & Tailwind CSS | Vite, Node.js (via NVM) |
-| **Backend**  | .NET 10.0            | Visual Studio 2026      |
+| Layer        | Technology                     | Build Tools / Runtime   |
+| :----------- | :------------------------------ | :---------------------- |
+| **Frontend** | React & TypeScript              | Vite, Node.js (via NVM) |
+| **Backend**  | Express.js & TypeScript         | Node.js (via NVM)       |
 
 ---
 
@@ -41,7 +41,7 @@ Run the following in an elevated PowerShell:
 
 Once your OS-specific NVM is installed, you can initialize and boot the React application.
 
-1. `cd frontend`
+1. `cd web/frontend`
 2. `npm install`
 3. `npm run dev`
 
@@ -49,16 +49,17 @@ Once your OS-specific NVM is installed, you can initialize and boot the React ap
 
 ## 3. Running the Backend Locally
 
-Our API services run on a completely separate runtime and do not require Node.js.
+The backend runs on the same Node.js/NVM setup as the frontend.
 
-1. Open Visual Studio 2026.
-2. Load the `.sln` file located in the `backend` directory.
-3. Restore any missing NuGet packages.
-4. Press F5 to compile and launch the development server.
+1. `cd web/backend`
+2. `npm install`
+3. `npm run dev`
+
+The backend serves the coverage/placement API to both the web console and the mobile field app, and ingests gateway node data via MQTT/HTTP.
 
 ---
 
 ## 4. Repository Rules
 
 - **Dependency Management:** Ensure your local `.gitignore` is active before pushing to avoid committing `node_modules`.
-- **Environment Variables:** Do not commit `.env` files; all secrets and connection strings must remain strictly local.
+- **Environment Variables:** Do not commit `.env` files; all secrets and connection strings must remain strictly local. Copy `.env.example` to `.env` in `web/backend/` and fill in local values.
