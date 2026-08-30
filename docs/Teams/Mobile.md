@@ -22,4 +22,4 @@ Owns the field companion app used by the responder physically placing relay node
 
 - [[Architecture/System Overview]]
 - [[Decisions/0004-use-react-native-for-mobile]]
-- For who's actually on this team by name, see the root [README's team section](../../README.md#assigned-departments).
+- For who's actually on this team by name, see the root [README's team section](../../README.md#team).

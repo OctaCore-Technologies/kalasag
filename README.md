@@ -39,57 +39,18 @@ Backend (Express + TypeScript)
 
 ## Team
 
-### Role Assignment
+| Name | Department | Role |
+| :--- | :--- | :--- |
+| **Aquino** | IoT | Hardware, Quality Assurance, Scrum Master / Project Manager |
+| **Villareal** | IoT | Hardware, Quality Assurance (Lead), Research Developer / Business Analyst |
+| **Seraspe** | IoT, Web | Hardware (Lead), Backend Developer / Database Manager |
+| **Tarroza** | IoT, Web | Hardware, Frontend Developer |
+| **Pangilinan** | Web | Backend Developer / Database Manager, Frontend Developer |
+| **Delos Santos** | Application | Backend Developer / Database Manager (Lead) |
+| **Gonzal** | Application | Fullstack Developer, Frontend Developer |
+| **Dayapera** | Application | Frontend Developer |
 
-**⚙️ Hardware**
-- Aquino
-- Villareal
-- Tarroza
-- Seraspe (Lead)
-
-**🌐 Backend Developer | Database Manager**
-- Pangilinan
-- Seraspe
-- Delos Santos (Lead)
-
-**🫩 Fullstack Developer**
-- Gonzal
-
-**🧑‍💻 Frontend Developer**
-- Gonzal
-- Tarroza
-- Dayapera
-- Pangilinan
-
-**🖼️ Quality Assurance**
-- Aquino
-- Villareal (Lead)
-
-**🔎 Research Developer | Business Analyst**
-- Villareal
-
-**👑 Scrum Master | Project Manager**
-- Aquino
-
-### Assigned Departments
-
-Departments map onto this repo's fronts — see [CONTRIBUTING.md](CONTRIBUTING.md) for the matching branch model (`firmware-main` / `web-main` / `mobile-main`) and [docs/Teams](docs/Teams) for the corresponding GitHub teams.
-
-**📠 IoT Department** (`firmware/`)
-- Villareal
-- Aquino
-- Seraspe
-- Tarroza
-
-**🌐 Web Department** (`web/frontend/`, `web/backend/`)
-- Pangilinan
-- Seraspe
-- Tarroza
-
-**📱 Application Department** (`mobile/`)
-- Gonzal
-- Delos Santos
-- Dayapera
+Departments map onto this repo's fronts — IoT → `firmware/`, Web → `web/frontend/` + `web/backend/`, Application → `mobile/`. See [CONTRIBUTING.md](CONTRIBUTING.md) for the matching branch model (`firmware-main` / `web-main` / `mobile-main`) and [docs/Teams](docs/Teams) for the corresponding GitHub teams.
 
 ## Contributing
 

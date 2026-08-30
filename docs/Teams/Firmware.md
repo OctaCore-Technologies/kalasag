@@ -23,4 +23,4 @@ Heads up: `platformio.ini` pins the ESP-IDF platform version on purpose — see 
 ## Related
 
 - [[Architecture/System Overview]]
-- For who's actually on this team by name, see the root [README's team section](../../README.md#assigned-departments).
+- For who's actually on this team by name, see the root [README's team section](../../README.md#team).
