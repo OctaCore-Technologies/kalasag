@@ -39,39 +39,57 @@ Backend (Express + TypeScript)
 
 ## Team
 
-Three departments map onto this repo's fronts — see [CONTRIBUTING.md](CONTRIBUTING.md) for the matching branch model (`firmware-main` / `web-main` / `mobile-main`) and [docs/Teams](docs/Teams) for the corresponding GitHub teams.
+### Role Assignment
 
-### IoT (`firmware/`)
+**⚙️ Hardware**
+- Aquino
+- Villareal
+- Tarroza
+- Seraspe (Lead)
 
-| Name | Role |
-| :--- | :--- |
-| **Seraspe** | Hardware (Lead) |
-| **Aquino** | Hardware |
-| **Tarroza** | Hardware |
-| **Villareal** | Hardware |
+**🌐 Backend Developer | Database Manager**
+- Pangilinan
+- Seraspe
+- Delos Santos (Lead)
 
-### Web (`web/frontend/`, `web/backend/`)
+**🫩 Fullstack Developer**
+- Gonzal
 
-| Name | Role |
-| :--- | :--- |
-| **Seraspe** | Backend Developer / Database Manager |
-| **Pangilinan** | Backend Developer / Database Manager, Frontend Developer |
-| **Tarroza** | Frontend Developer |
+**🧑‍💻 Frontend Developer**
+- Gonzal
+- Tarroza
+- Dayapera
+- Pangilinan
 
-### Application (`mobile/`)
+**🖼️ Quality Assurance**
+- Aquino
+- Villareal (Lead)
 
-| Name | Role |
-| :--- | :--- |
-| **Delos Santos** | Backend Developer / Database Manager (Lead) |
-| **Gonzal** | Fullstack Developer, Frontend Developer |
-| **Dayapera** | Frontend Developer |
+**🔎 Research Developer | Business Analyst**
+- Villareal
 
-### Cross-team roles
+**👑 Scrum Master | Project Manager**
+- Aquino
 
-| Name | Role |
-| :--- | :--- |
-| **Aquino** | Scrum Master / Project Manager, Quality Assurance |
-| **Villareal** | Quality Assurance (Lead), Research Developer / Business Analyst |
+### Assigned Departments
+
+Departments map onto this repo's fronts — see [CONTRIBUTING.md](CONTRIBUTING.md) for the matching branch model (`firmware-main` / `web-main` / `mobile-main`) and [docs/Teams](docs/Teams) for the corresponding GitHub teams.
+
+**📠 IoT Department** (`firmware/`)
+- Villareal
+- Aquino
+- Seraspe
+- Tarroza
+
+**🌐 Web Department** (`web/frontend/`, `web/backend/`)
+- Pangilinan
+- Seraspe
+- Tarroza
+
+**📱 Application Department** (`mobile/`)
+- Gonzal
+- Delos Santos
+- Dayapera
 
 ## Contributing
 

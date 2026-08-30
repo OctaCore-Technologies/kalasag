@@ -23,4 +23,4 @@ Owns both the coordination console and the API server — one team, two folders 
 
 - [[Architecture/System Overview]]
 - [[Decisions/0003-use-express-for-backend]]
-- For who's actually on this team by name, see the root [README's Team Members table](../../README.md#team-members).
+- For who's actually on this team by name, see the root [README's team section](../../README.md#assigned-departments).
