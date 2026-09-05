@@ -3,6 +3,8 @@
 # Global rule — PM and QA must approve any PR touching anything in the repo
 *   @OctaCore-Technologies/pm @OctaCore-Technologies/qa
 
-/frontend/   @OctaCore-Technologies/pm @OctaCore-Technologies/qa @OctaCore-Technologies/frontend
-/backend/    @OctaCore-Technologies/pm @OctaCore-Technologies/qa @OctaCore-Technologies/backend
-/firmware/   @OctaCore-Technologies/pm @OctaCore-Technologies/qa @OctaCore-Technologies/firmware
+/web/frontend/   @OctaCore-Technologies/pm @OctaCore-Technologies/qa @OctaCore-Technologies/web
+/web/backend/    @OctaCore-Technologies/pm @OctaCore-Technologies/qa @OctaCore-Technologies/web
+/mobile/         @OctaCore-Technologies/pm @OctaCore-Technologies/qa @OctaCore-Technologies/mobile
+/firmware/       @OctaCore-Technologies/pm @OctaCore-Technologies/qa @OctaCore-Technologies/firmware
+/shared/         @OctaCore-Technologies/pm @OctaCore-Technologies/qa

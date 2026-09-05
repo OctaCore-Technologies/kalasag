@@ -1,21 +1,29 @@
-# Firmware - Hardware Integration
+# Firmware - KALASAG Relay Node
 
-This directory contains the embedded C++ codebase for our hardware endpoints, running on the ESP32-S3 architecture. This firmware manages all physical interactions, including sensor polling, camera triggers, motor driver logic, and state management (e.g., the bottle-recycling currency system).
+This directory contains the embedded codebase for the KALASAG relay node, running on the ESP32-S3 architecture. The node's core mesh relay behavior is provided by an existing open-source mesh firmware (Meshtastic or MeshCore) rather than being written from scratch — this firmware's job is integration and glue: GPS position logging, BLE pairing with the field app, and (on the gateway node only) uplinking status data to the backend.
 
 ## Hardware & Tech Stack
 
 - **Microcontroller:** ESP32-S3 (Config: `4d_systems_esp32s3_gen4_r8n16`)
 - **Environment:** PlatformIO
-- **Key Peripherals:** ESP32-S3 Cam, servos, LiDAR, environmental sensors, LED indicators, and audio buzzers.
+- **Radio:** LoRa module for multi-hop mesh relay
+- **Key Peripherals:** GPS module (auto position logging on GPS-equipped nodes), BLE (pairing/registration with the field app), battery/signal monitoring
+
+> `platformio.ini` pins an exact `espressif32` platform version. Leaving it unpinned lets CI silently pull a newer ESP-IDF release whose Kconfig options don't match the committed `sdkconfig.*` file, which breaks the build. If you bump the pinned version, delete `sdkconfig.4d_systems_esp32s3_gen4_r8n16` and let it regenerate against the new version, then commit the regenerated file.
+
+## Node Roles
+
+- **Relay node:** runs mesh firmware, relays messages, reports battery/signal/position.
+- **Gateway node:** a relay node with internet connectivity that additionally uplinks node status and coverage data to the backend via MQTT/HTTP.
 
 ---
 
 ## Directory Structure
 
-- `src/`: Main application source code and core state machine logic.
-- `lib/`: Custom, reusable internal hardware libraries (e.g., LED management, buzzer control, sensor parsing).
+- `src/`: Main application entrypoint — mesh firmware init, calls into `lib/` modules.
+- `lib/`: Custom, reusable internal libraries (LoRa/mesh integration, GPS logging, BLE pairing, gateway uplink).
 - `include/`: Header files, global configurations, and unified GPIO pin mappings.
-- `test/`: Unit tests for hardware logic.
+- `test/`: Unit tests for firmware logic.
 
 ---
 

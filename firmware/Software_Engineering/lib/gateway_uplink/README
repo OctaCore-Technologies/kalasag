@@ -1,0 +1,4 @@
+MQTT/HTTP client used only by the gateway node (the one relay node with internet
+connectivity) to uplink node status/coverage data to the backend.
+
+Payload shape: shared/docs/mqtt-payload-schema.md

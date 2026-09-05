@@ -1,0 +1,4 @@
+LoRa radio driver glue / mesh firmware (Meshtastic or MeshCore) integration layer.
+
+TODO: pick integration path — fork/vendor the mesh firmware and add this as a module,
+or pull it in as a PlatformIO lib dependency with thinner glue code here.

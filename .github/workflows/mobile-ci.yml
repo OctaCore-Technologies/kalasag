@@ -1,27 +1,20 @@
-name: Frontend CI
+name: Mobile CI
 
 on:
   pull_request:
     branches:
       - main
-      - web-main
+      - mobile-main
     paths:
-      - 'web/frontend/src/**'
-      - 'web/frontend/public/**'
-      - 'web/frontend/index.html'
-      - 'web/frontend/package.json'
-      - 'web/frontend/package-lock.json'
-      - 'web/frontend/vite.config.ts'
-      - 'web/frontend/eslint.config.js'
-      - 'web/frontend/tsconfig*.json'
+      - 'mobile/**'
 
 jobs:
-  frontend-ci:
-    name: Lint, Build & Test (Frontend)
+  mobile-ci:
+    name: Lint, Typecheck & Test (Mobile)
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: web/frontend
+        working-directory: mobile
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -39,8 +32,8 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Build
-        run: npm run build
+      - name: Typecheck
+        run: npx tsc --noEmit
 
       - name: Test
         run: npm test --if-present

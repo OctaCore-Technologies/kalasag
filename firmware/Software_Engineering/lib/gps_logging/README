@@ -1,0 +1,4 @@
+GPS module read + position packet formatting for GPS-equipped nodes.
+
+Output shape must match the "positionSource": "gps" case in
+shared/docs/mqtt-payload-schema.md.

@@ -1,0 +1,10 @@
+{
+  "name": "kalasag",
+  "private": true,
+  "workspaces": [
+    "web/frontend",
+    "web/backend",
+    "mobile",
+    "shared"
+  ]
+}

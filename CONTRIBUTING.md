@@ -6,16 +6,16 @@ This document defines how we branch, commit, and merge code in this repo. Read i
 
 ```
 main                              # production — PM + QA approval required
-├── frontend-main                 # frontend integration branch
-│   └── frontend-main/feat/...    # frontend feature branches
-├── backend-main                  # backend integration branch
-│   └── backend-main/feat/...     # backend feature branches
+├── web-main                      # web (frontend + backend) integration branch
+│   └── web-main/feat/...         # web feature branches
+├── mobile-main                   # mobile integration branch
+│   └── mobile-main/feat/...      # mobile feature branches
 └── firmware-main                 # firmware integration branch
     └── firmware-main/feat/...    # firmware feature branches
 ```
 
 - **`main`** — always deployable. Nobody pushes here directly; only merges via PR from a team-main branch.
-- **`frontend-main` / `backend-main` / `firmware-main`** — each team's integration branch. Feature branches merge here first.
+- **`web-main` / `mobile-main` / `firmware-main`** — each team's integration branch. Feature branches merge here first.
 - **Feature branches** — where actual work happens. Always branched off the relevant team-main branch, never off `main`.
 
 ## Branch naming convention
@@ -26,16 +26,18 @@ main                              # production — PM + QA approval required
 
 | Part | Options |
 |---|---|
-| `<team>` | `frontend`, `backend`, `firmware` |
+| `<team>` | `web`, `mobile`, `firmware` |
 | `<type>` | `feat`, `fix`, `chore`, `docs`, `hotfix` |
 | `<short-description>` | lowercase, hyphen-separated, no ticket numbers needed |
 
 **Examples:**
-```
-frontend-main/feat/homepage
-frontend-main/fix/navbar-overlap
-backend-main/feat/user-auth
-backend-main/fix/login-timeout
+```text
+web-main/feat/homepage
+web-main/fix/navbar-overlap
+web-main/feat/user-auth
+web-main/fix/login-timeout
+mobile-main/feat/ble-pairing
+mobile-main/fix/offline-sync-crash
 firmware-main/feat/sensor-calibration
 firmware-main/chore/update-drivers
 ```
@@ -59,12 +61,12 @@ chore: bump dependency versions
 
 1. **Branch off your team-main branch**, not `main`.
    ```
-   git checkout frontend-main
+   git checkout web-main
    git pull
-   git checkout -b frontend-main/feat/homepage
+   git checkout -b web-main/feat/homepage
    ```
 2. **Commit your work** in small, logical chunks. Push regularly so your branch is visible to the team.
-3. **Open a PR into your team-main branch** (e.g. `frontend-main/feat/homepage` → `frontend-main`).
+3. **Open a PR into your team-main branch** (e.g. `web-main/feat/homepage` → `web-main`).
    - Requires **1 teammate approval**
    - Requires CI checks to pass
 4. **Once merged into team-main**, and when your team-main branch is ready for release, open a PR from **team-main into `main`**.
