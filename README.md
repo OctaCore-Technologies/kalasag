@@ -10,11 +10,11 @@
 | **Aquino**       | Project Manager / Scrum Master / Hardware Designer / QA |
 | **Seraspe**      | Hardware Specialist / Database Manager                  |
 | **Dayapera**     | Frontend Developer / UI/UX Designer                     |
-| **Gonzal**       | Frontend Developer / UI/UX Designer                     |
-| **Pangilinan**   | Backend Developer / UI/UX Designer                      |
+| **Gonzal**       | Fullstack Developer                                     |
+| **Pangilinan**   | Fullstack Developer                                     |
 | **Tarroza**      | Backend Developer / Hardware Specialist                 |
 | **Delos Santos** | Backend Developer / Database Manager                    |
-| **Villareal**    | Hardware Designer / QA                                  |
+| **Villareal**    | Hardware Designer / Researcher / QA                     |
 
 ## Tech Stack (TBD)
 
