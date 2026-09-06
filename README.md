@@ -32,7 +32,7 @@ Backend (Express + TypeScript)
 
 | Component | Stack |
 |---|---|
-| Web console | React, TypeScript, Vite |
+| Web console | React, TypeScript, Vite, Tailwind CSS |
 | Backend | Express, TypeScript, Node.js |
 | Mobile app | React Native, TypeScript |
 | Firmware | ESP32-S3, PlatformIO, Meshtastic/MeshCore |

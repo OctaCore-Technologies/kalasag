@@ -6,7 +6,7 @@ This directory contains the coordination console (frontend) and API server (back
 
 | Layer        | Technology                     | Build Tools / Runtime   |
 | :----------- | :------------------------------ | :---------------------- |
-| **Frontend** | React & TypeScript              | Vite, Node.js (via NVM) |
+| **Frontend** | React, TypeScript & Tailwind CSS | Vite, Node.js (via NVM) |
 | **Backend**  | Express.js & TypeScript         | Node.js (via NVM)       |
 
 ---
