@@ -12,7 +12,7 @@ Owns the relay/gateway node firmware — integration and glue around an existing
 
 ## Owns
 
-- `firmware/Software_Engineering/` — ESP32-S3, PlatformIO, Meshtastic/MeshCore
+- `firmware/` — ESP32-S3, PlatformIO, Meshtastic/MeshCore
 
 ## GitHub
 

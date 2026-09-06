@@ -6,7 +6,7 @@ on:
       - main
       - firmware-main
     paths:
-      - 'firmware/Software_Engineering/**'
+      - 'firmware/**'
 
 jobs:
   firmware-build:
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: firmware/Software_Engineering
+        working-directory: firmware
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.platformio
-          key: ${{ runner.os }}-platformio-${{ hashFiles('firmware/Software_Engineering/platformio.ini') }}
+          key: ${{ runner.os }}-platformio-${{ hashFiles('firmware/platformio.ini') }}
           restore-keys: |
             ${{ runner.os }}-platformio-
 
