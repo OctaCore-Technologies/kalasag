@@ -24,9 +24,9 @@ mobile/.expo/
 *.mobileprovision
 
 # PlatformIO
-firmware/Software_Engineering/.pio/
-firmware/Software_Engineering/.pioenvs/
-firmware/Software_Engineering/.piolibdeps/
+firmware/.pio/
+firmware/.pioenvs/
+firmware/.piolibdeps/
 
 # macOS
 .DS_Store

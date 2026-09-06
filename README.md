@@ -26,29 +26,32 @@ Backend (Express + TypeScript)
 | `mobile/` | Field companion app — React Native + TypeScript |
 | `firmware/` | ESP32 + LoRa relay node firmware — PlatformIO |
 | `shared/` | Cross-component data contracts (node/coverage/MQTT payload types) |
+| `docs/` | Obsidian knowledge base — architecture notes, ADRs, team pages (open as its own vault, see [docs/README.md](docs/README.md)) |
 
 ## Tech Stack
 
 | Component | Stack |
 |---|---|
-| Web console | React, TypeScript, Vite |
+| Web console | React, TypeScript, Vite, Tailwind CSS |
 | Backend | Express, TypeScript, Node.js |
 | Mobile app | React Native, TypeScript |
 | Firmware | ESP32-S3, PlatformIO, Meshtastic/MeshCore |
 
-## Team Members
+## Team
 
-| Name             | Role / Focus Area                                       |
-| :--------------- | :------------------------------------------------------ |
-| **Aquino**       | Project Manager / Scrum Master / Hardware Designer / QA |
-| **Seraspe**      | Hardware Specialist / Database Manager                  |
-| **Dayapera**     | Frontend Developer / UI/UX Designer                     |
-| **Gonzal**       | Fullstack Developer                                     |
-| **Pangilinan**   | Fullstack Developer                                     |
-| **Tarroza**      | Backend Developer / Hardware Specialist                 |
-| **Delos Santos** | Backend Developer / Database Manager                    |
-| **Villareal**    | Hardware Designer / Researcher / QA                     |
+| Name | Department | Role |
+| :--- | :--- | :--- |
+| **Aquino** | IoT | Hardware, Quality Assurance, Scrum Master / Project Manager |
+| **Villareal** | IoT | Hardware, Quality Assurance (Lead), Research Developer / Business Analyst |
+| **Seraspe** | IoT, Web | Hardware (Lead), Backend Developer / Database Manager |
+| **Tarroza** | IoT, Web | Hardware, Frontend Developer |
+| **Pangilinan** | Web | Fullstack Developer, Backend Developer / Database Manager |
+| **Delos Santos** | Application | Backend Developer / Database Manager (Lead) |
+| **Gonzal** | Application | Fullstack Developer, Frontend Developer |
+| **Dayapera** | Application | Frontend Developer |
+
+Departments map onto this repo's fronts — IoT → `firmware/`, Web → `web/frontend/` + `web/backend/`, Application → `mobile/`. See [CONTRIBUTING.md](CONTRIBUTING.md) for the matching branch model (`firmware-main` / `web-main` / `mobile-main`) and [docs/Teams](docs/Teams) for the corresponding GitHub teams.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for branching, commit conventions, and PR workflow. See [shared/](shared/) for the data contracts shared across backend, web, mobile, and firmware.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for branching, commit conventions, and PR workflow. See [shared/](shared/) for the data contracts shared across backend, web, mobile, and firmware, and [docs/](docs/) for architecture notes, decision records, and team pages.
