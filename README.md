@@ -45,7 +45,7 @@ Backend (Express + TypeScript)
 | **Villareal** | IoT | Hardware, Quality Assurance (Lead), Research Developer / Business Analyst |
 | **Seraspe** | IoT, Web | Hardware (Lead), Backend Developer / Database Manager |
 | **Tarroza** | IoT, Web | Hardware, Frontend Developer |
-| **Pangilinan** | Web | Backend Developer / Database Manager, Frontend Developer |
+| **Pangilinan** | Web | Fullstack Developer, Backend Developer / Database Manager |
 | **Delos Santos** | Application | Backend Developer / Database Manager (Lead) |
 | **Gonzal** | Application | Fullstack Developer, Frontend Developer |
 | **Dayapera** | Application | Frontend Developer |
